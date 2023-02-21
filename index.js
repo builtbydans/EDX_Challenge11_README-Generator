@@ -47,12 +47,12 @@ const questions = [
   },
   {
     type: "input",
-    message: "What instructions does the user need to about using this repo?",
+    message: "What instructions does the user need to know about using this repo?",
     name: "usage",
   },
   {
     type: "input",
-    message: "What instructions does the user need to about contributing to this repo?",
+    message: "What instructions does the user need to know about contributing to this repo?",
     name: "contribution",
   },
 ];
@@ -61,7 +61,7 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) =>
-    err ? console.log(err) : console.log("Write To File Successful")
+    err ? console.log(err) : console.log("README created successfully")
   );
 }
 
